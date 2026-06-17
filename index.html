@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Isaac Tucker</title>
+  <meta name="description" content="Academic homepage of Isaac Tucker — strategy and organizations researcher at UCLA Anderson." />
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --paper:   #fdfdfb;
+      --ink:     #1b1b18;
+      --muted:   #6b6b63;
+      --rule:    #e3e2dc;
+      --accent:  #1f3a52;   /* deep slate blue — links & marks */
+      --accent-2:#2f5d83;   /* hover */
+      --serif: "Newsreader", Georgia, "Times New Roman", serif;
+      --sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 18px;
+      line-height: 1.6;
+      font-optical-sizing: auto;
+    }
+
+    .wrap {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: clamp(2.5rem, 6vw, 5.5rem) 1.5rem 4rem;
+    }
+
+    /* ---- Header ---- */
+    .eyebrow {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.3rem, 6vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      margin: 0 0 0.5rem;
+    }
+
+    .role {
+      font-size: 1.15rem;
+      color: var(--muted);
+      font-style: italic;
+      margin: 0 0 1.5rem;
+    }
+
+    .contact {
+      font-family: var(--sans);
+      font-size: 0.92rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.1rem;
+      margin: 0 0 2.5rem;
+    }
+    .contact a { font-weight: 500; }
+
+    /* ---- Body ---- */
+    .lead {
+      font-size: 1.18rem;
+      line-height: 1.65;
+      margin: 0 0 3.25rem;
+    }
+
+    section { margin: 0 0 3rem; }
+
+    .section-label {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--rule);
+      margin: 0 0 1.4rem;
+    }
+
+    /* ---- Papers ---- */
+    .paper { margin: 0 0 1.6rem; }
+    .paper:last-child { margin-bottom: 0; }
+
+    .paper-title {
+      font-size: 1.08rem;
+      font-weight: 500;
+      line-height: 1.35;
+      margin: 0 0 0.25rem;
+    }
+    .paper-meta {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    .paper-meta a { font-weight: 500; }
+
+    .tag {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.66rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 2px;
+      padding: 0.1rem 0.4rem;
+      vertical-align: 0.12em;
+      margin-left: 0.5rem;
+    }
+
+    /* ---- Documents row ---- */
+    .docs {
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+    }
+    .docs a { font-weight: 500; }
+
+    /* ---- Links ---- */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease, color 0.15s ease;
+    }
+    a:hover { color: var(--accent-2); border-bottom-color: currentColor; }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+
+    footer {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--rule);
+      padding-top: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      a { transition: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+
+    <!-- ============ HEADER ============ -->
+    <header>
+      <p class="eyebrow">UCLA Anderson School of Management</p>
+      <h1>Isaac Tucker</h1>
+      <!-- EDIT role line as you like -->
+      <p class="role">Doctoral Candidate, Strategy &amp; Organizations</p>
+
+      <nav class="contact">
+        <a href="mailto:Isaac.Tucker.phd@anderson.ucla.edu">Isaac.Tucker.phd@anderson.ucla.edu</a>
+        <a href="cv.pdf">CV (PDF)</a>
+        <a href="https://scholar.google.com/citations?user=_XhBG4cAAAAJ">Google&nbsp;Scholar</a>
+      </nav>
+    </header>
+
+    <!-- ============ BIO ============ -->
+    <!-- EDIT this paragraph. Keep it to 2–4 sentences. -->
+    <p class="lead">
+      I study strategic management, organizational theory, and the management of human
+      capital, using formal modeling, computational simulation, and empirical methods.
+      My work asks how firms build and deploy their people as a source of competitive
+      advantage. Before academia, I spent a decade in a high-growth software firm,
+      rising to the executive team — a perspective that shapes the questions I ask.
+    </p>
+
+    <!-- ============ WORKING PAPERS ============ -->
+    <section>
+      <h2 class="section-label">Working Papers</h2>
+
+      <div class="paper">
+        <p class="paper-title">
+          Job Market Paper Title Goes Here
+          <span class="tag">Job Market Paper</span>
+        </p>
+        <p class="paper-meta">
+          One-line description or status (e.g. under review at SMJ).
+          &nbsp;·&nbsp; <a href="papers/job-market-paper.pdf">PDF</a>
+        </p>
+      </div>
+
+      <div class="paper">
+        <p class="paper-title">Second Working Paper Title</p>
+        <p class="paper-meta">
+          Brief status note.
+          &nbsp;·&nbsp; <a href="papers/paper-2.pdf">PDF</a>
+        </p>
+      </div>
+
+      <div class="paper">
+        <p class="paper-title">Third Working Paper Title</p>
+        <p class="paper-meta">
+          Brief status note.
+          &nbsp;·&nbsp; <a href="papers/paper-3.pdf">PDF</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ DOCUMENTS ============ -->
+    <section>
+      <h2 class="section-label">Documents</h2>
+      <div class="docs">
+        <a href="cv.pdf">Curriculum Vitae</a>
+        <a href="research-statement.pdf">Research Statement</a>
+        <a href="teaching-statement.pdf">Teaching Statement</a>
+      </div>
+    </section>
+
+    <footer>
+      <!-- EDIT or delete -->
+      Last updated June 2026.
+    </footer>
+
+  </main>
+</body>
+</html>
