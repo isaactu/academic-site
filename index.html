@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Isaac Tucker</title>
-  <meta name="description" content="Academic homepage of Isaac Tucker — strategy and organizations researcher at UCLA Anderson." />
+  <meta name="description" content="Academic homepage of Isaac Tucker — strategy researcher at UCLA Anderson." />
   <meta name="robots" content="noindex" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -80,6 +80,27 @@
       margin: 0 0 2.5rem;
     }
     .contact a { font-weight: 500; }
+
+    /* ---- Masthead (header + headshot) ---- */
+    .masthead {
+      display: flex;
+      gap: 1.75rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .masthead-text { flex: 1 1 auto; min-width: 0; }
+    .headshot {
+      flex-shrink: 0;
+      width: 132px;
+      height: auto;
+      border-radius: 3px;
+      border: 1px solid var(--rule);
+      margin-top: 0.35rem;
+    }
+    @media (max-width: 30rem) {
+      .masthead { flex-direction: column-reverse; align-items: flex-start; }
+      .headshot { width: 112px; }
+    }
 
     /* ---- Body ---- */
     .lead {
@@ -178,17 +199,19 @@
   <main class="wrap">
 
     <!-- ============ HEADER ============ -->
-    <header>
-      <p class="eyebrow">UCLA Anderson School of Management</p>
-      <h1>Isaac Tucker</h1>
-      <!-- EDIT role line as you like -->
-      <p class="role">Doctoral Candidate, Strategy &amp; Organizations</p>
+    <header class="masthead">
+      <div class="masthead-text">
+        <p class="eyebrow">UCLA Anderson School of Management</p>
+        <h1>Isaac Tucker</h1>
+        <p class="role">Doctoral Candidate, Strategy</p>
 
-      <nav class="contact">
-        <a href="mailto:Isaac.Tucker.phd@anderson.ucla.edu">Isaac.Tucker.phd@anderson.ucla.edu</a>
-        <a href="cv.pdf">CV (PDF)</a>
-        <a href="https://scholar.google.com/citations?user=_XhBG4cAAAAJ">Google&nbsp;Scholar</a>
-      </nav>
+        <nav class="contact">
+          <a href="mailto:Isaac.Tucker.phd@anderson.ucla.edu">Isaac.Tucker.phd@anderson.ucla.edu</a>
+          <a href="cv.pdf">CV (PDF)</a>
+          <a href="https://scholar.google.com/citations?user=_XhBG4cAAAAJ">Google&nbsp;Scholar</a>
+        </nav>
+      </div>
+      <img class="headshot" src="headshot.jpg" alt="Isaac Tucker" width="132" height="171" />
     </header>
 
     <!-- ============ BIO ============ -->
@@ -207,28 +230,40 @@
 
       <div class="paper">
         <p class="paper-title">
-          Job Market Paper Title Goes Here
+          Performance as a Random Variable
           <span class="tag">Job Market Paper</span>
         </p>
         <p class="paper-meta">
-          One-line description or status (e.g. under review at SMJ).
-          &nbsp;·&nbsp; <a href="papers/job-market-paper.pdf">PDF</a>
+          A formal model setting the scope conditions for human-capital strategy under stochastic performance.
+          &nbsp;·&nbsp; <a href="https://osf.io/preprints/socarxiv/8wjhg">Draft (OSF)</a>
         </p>
       </div>
 
       <div class="paper">
-        <p class="paper-title">Second Working Paper Title</p>
+        <p class="paper-title">Searching for Serendipity</p>
         <p class="paper-meta">
-          Brief status note.
-          &nbsp;·&nbsp; <a href="papers/paper-2.pdf">PDF</a>
+          With Martin Gonzalez-Cabello and Olav Sorenson. Major revision, <em>Strategic Management Journal</em>.
+          &nbsp;·&nbsp; <a href="https://osf.io/preprints/socarxiv/ve8mx">Draft (OSF)</a>
         </p>
       </div>
 
       <div class="paper">
-        <p class="paper-title">Third Working Paper Title</p>
+        <p class="paper-title">Playing the Spread: The Implications of Worker Volatility for Human Capital Management</p>
         <p class="paper-meta">
-          Brief status note.
-          &nbsp;·&nbsp; <a href="papers/paper-3.pdf">PDF</a>
+          Whether organizations value worker consistency, using contract and injury data from professional basketball.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section>
+      <h2 class="section-label">Publications</h2>
+
+      <div class="paper">
+        <p class="paper-title">Mapping Knowledge Space and Technological Relatedness in US Cities</p>
+        <p class="paper-meta">
+          With Dieter F. Kogler and David L. Rigby. <em>European Planning Studies</em>, 21(9), 1374–1391 (2013).
+          &nbsp;·&nbsp; <a href="https://doi.org/10.1080/09654313.2012.755832">DOI</a>
         </p>
       </div>
     </section>
