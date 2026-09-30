@@ -283,5 +283,22 @@
     </footer>
 
   </main>
+
+  <!-- Count PDF/download clicks as GoatCounter events (dashboard: Events) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll('a[href$=".pdf"]').forEach(function (a) {
+        a.addEventListener("click", function () {
+          if (window.goatcounter && window.goatcounter.count) {
+            window.goatcounter.count({
+              path: new URL(a.href, location.href).pathname.replace(/^\//, ""),
+              title: a.textContent.trim(),
+              event: true
+            });
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
